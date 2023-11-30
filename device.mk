@@ -223,6 +223,8 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -283,6 +285,10 @@ PRODUCT_PACKAGES += \
 
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
+
+# GalleryPhotoManager
+PRODUCT_PACKAGES += \
+    GalleryPhotoManager
 
 # Radio
 PRODUCT_PACKAGES += \
