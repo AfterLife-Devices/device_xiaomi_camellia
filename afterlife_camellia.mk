@@ -18,7 +18,7 @@ $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 AFTERLIFE_GAPPS := true
 AFTERLIFE_MAINTAINER := Sabrina
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_BLUR := true
+TARGET_SUPPORTS_BLUR := false
 USE_PIXEL_CHARGING := true
 
 TARGET_BOOT_ANIMATION_RES := 1080
